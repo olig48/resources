@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
                 $i.remove();
             });
     });
-    setTimeout('delay()', 2000);
+    setTimeout('delay()', 4000);
 });
 
 function delay() {
