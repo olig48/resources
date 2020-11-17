@@ -4,7 +4,7 @@ if (Math.random() < 0.5) {
         return res.json();
       })
       .then(function(data) {
-        hitokotoOrjinrishici = data.hitokoto + '<br>' +
+        hitokotoOrjinrishici.innerHTML = data.hitokoto + '<br>' +
             '&nbsp;&nbsp;&nbsp;—' + data.from;
         document.getElementById('hitokotoOrjinrishici').value(hitokotoOrjinrishici);
       })
@@ -20,7 +20,7 @@ if (Math.random() < 0.5) {
         return res.json();
       })
       .then(function(data) {
-        hitokotoOrjinrishici = data.data.content + '<br>' +
+        hitokotoOrjinrishici.innerHTML = data.data.content + '<br>' +
             '&nbsp;&nbsp;&nbsp;' +
             '——' + data.data.dynasty + '·' + data.data.author + '<br>' +
             '《' + data.data.title + '》';
