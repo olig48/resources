@@ -3,7 +3,7 @@ var OriginTitle = document.title;
 var titleTime;
 document.addEventListener('visibilitychange', function () {
     if (document.hidden) {
-        $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/olig48/resources/picture/funny.ico");
+        $('[rel="icon"]').attr('href', "https://cdn.jsdelivr.net/gh/olig48/resources/img/funny.ico");
         document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
         clearTimeout(titleTime);
     }
